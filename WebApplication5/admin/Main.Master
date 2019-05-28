@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="WebApplication5.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Araç Kiralama</title>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"> </script>
+
+    <script type="text/javascript">
+        $("document").ready(function () {
+
+            $(".konular").mouseover(function () {
+
+                $(".menü").css("display", "block")
+            })
+            $(".konular").mouseleave(function () {
+
+                $(".menü").css("display", "none")
+            })
+
+        })
+
+    </script>
+    <link href="/Style.css" rel="stylesheet" />
+    <link href="w3.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="wrapper">
+            <header>
+
+                <div class="logo">
+                    <a href="default.aspx">
+                        <img src="images/logo1.png" style="width: 100%; height: 100%; padding: 0px;" />
+                    </a>
+
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="default.aspx">Araç Ekle</a></li>
+                        <li><a href="ArabaResim.aspx">Araç Resim</a></li>
+                        <li><a href="AraçGöster.aspx">Araçları Göster </a></li>
+                        <li><a href="MaliTablo.aspx">Mali Bilanço</a> </li>
+   
+
+                        <div class="dropdown">
+                            <button class="dropbtn">Duyurular</button>
+                            <div class="dropdown-content">
+                                <a href="DuyuruEkle.aspx">D. Ekle</a>
+                                <a href="DuyuruGöster.aspx">D.Düzenle</a>
+
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+
+            </header>
+
+
+            <div class="sol">
+              <a href="Mesajlar.aspx">  <div class="solmenü">Gelen Kutusu</div></a>
+               <a href="Yorumlar.aspx"> <div class="solmenü">Yorumlar </div></a>
+               <a href="ÜyeOnay.aspx"> <div class="solmenü">Üye Onay</div></a>
+
+            </div>
+
+            <div class="sağ">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,248 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu.master.cs" Inherits="WebApplication5.kullanıcı.menu" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Araç Kiralama</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!-- Theme skin -->
+        <link href="skins/default.css" rel="stylesheet" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- fontawesome.css -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+
+
+
+        <!--font-->
+        <link href="https://fonts.googleap is.com/css?family=Roboto:300,400" rel="stylesheet">
+
+        <!-- lightbox CSS -->
+        <link rel="stylesheet" href="css/lightbox.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.CSS">
+
+        <!-- style.CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- scroll reveal js -->
+        <script src="js/scrollreveal.min.js">
+       
+        </script>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="float: left;">
+                    <p style="color: white; margin-top: 10px;">
+                        <i class="glyphicon glyphicon-home" style="color: white;"></i>
+                    </p>
+                    <a href="anasayfa.aspx"><i class="fas fa-home" style="color: blue; font-size: 35px;"></i></a>
+                </div>
+                <div style="float: left; margin-left: 5px;">
+                    <p style="color: white; margin-top: 10px;">
+                        <i class="fas fa-phone mr-3" style="color: white;">0212 444 4443</i>
+                    </p>
+                </div>
+                <div class="collapse  navbar-collapse" id="nvbCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kampanyalar.aspx">Kampanyalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aracsiparis.aspx">Filomuz</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeri.aspx">Galeri</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="uyekayit.aspx">Kayıt</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="duyurular.aspx">Duyurular</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hakkinda.aspx">Hakkımızda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.aspx">İletisim</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin/default.aspx">Yönetici</a>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="margin-top:10px; border:3px solid blue;">
+            <!-- Footer -->
+            <footer class="page-footer font-small unique-color-dark">
+
+                <div style="background-color: green;">
+                    <div class="container">
+
+                        <!-- Grid row-->
+                        <div class="row py-4 d-flex align-items-center">
+
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                <h6 class="mb-0">Bizi sosyal medyada takip edin!</h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/" target="_blank" class="fb-ic">
+                                    <i class="fab fa-facebook-f white-text mr-4"></i>
+                                </a>
+                                <!-- Twitter -->
+                                <a href="https://twitter.com/" target="_blank" class="tw-ic">
+                                    <i class="fab fa-twitter white-text mr-4"></i>
+                                </a>
+                                <!-- Google +-->
+                                <a href="https://plus.google.com/discover" target="_blank" class="gplus-ic">
+                                    <i class="fab fa-google-plus-g white-text mr-4"></i>
+                                </a>
+                                <!--Linkedin -->
+                                <a href="https://www.linkedin.com/" class="li-ic" target="_blank">
+                                    <i class="fab fa-linkedin-in white-text mr-4"></i>
+                                </a>
+                                <!--Instagram-->
+                                <a href="https://www.instagram.com/" class="ins-ic" target="_blank">
+                                    <i class="fab fa-instagram white-text"></i>
+                                </a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row-->
+
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left mt-5">
+
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                            <!-- Content -->
+                            <h6 class="text-uppercase font-weight-bold">Araç Kiralama</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>Filomuzda bulunan yüzlerce araçdan birisini hızlı ve pratik bir şekilde kiralayın. Güvenle yolculuk edin. Web sitemizde kredi kartı bilgileriniz. 3D Secure ile korunmaktadır.</p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold">Güvenli</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <a href="kampanyalar.aspx">Kampanyalar</a>
+                            </p>
+                            <p>
+                                <a href="iletisim.aspx">İletişim</a>
+                            </p>
+                            <p>
+                                <a href="#!">Galeri</a>
+                            </p>
+
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold">Araç Kiralama</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <a href="#!">Hesabınız</a>
+                            </p>
+                            <p>
+                                <a href="#!">Hakkımızda</a>
+                            </p>
+
+                            <p>
+                                <a href="#!">Yardım</a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold">İletişim</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <i class="fas fa-home mr-3"></i>Bucak, Burdur, Türkiye
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i>bilgi@arackiralama.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i>0534 954 32 45
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i>0212 656 40 47
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                    © 2018 Copyright Araç Kiralama Design By @YBS
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+
+
+
+    </form>
+</body>
+</html>

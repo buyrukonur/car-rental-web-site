@@ -1,0 +1,436 @@
+﻿body {
+    border: 1px solid red;
+    background: linear-gradient(gray, white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration:none;
+    height:44px;
+    margin-left:15px;
+    
+}
+
+.wrapper {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    border-radius:10px;
+    margin-top:20px;
+   
+}
+
+
+    header .logo {
+        float: left;
+        width: 89px;
+        height: 45px;
+        border-right: 1px solid #f00;
+        color: red;
+    }
+
+    header nav {
+        float: left;
+        width: 800px;
+        height: 45px;
+        line-height: 45px;
+      
+        
+
+    }
+
+        header nav ul {
+            list-style: none;
+          
+        }
+
+            header nav ul li {
+                float: left;
+                font-size: 15.5px;
+                color:white;   
+                background-color:black;
+               
+                
+            }
+
+                header nav ul li:hover {
+                    text-shadow:1px 1px 4px red;
+                    background-color:gray;
+                    
+                }
+
+.konular {
+    position: relative;
+}
+
+
+.menü {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: white;
+}
+
+header .arama {
+    float: left;
+    width: 100px;
+    height: 45px;
+}
+
+    header .arama .txtarama {
+        float: left;
+        width: 209px;
+        height: 44px;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+        text-transform: uppercase;
+    }
+
+    header .arama .btnarama {
+        float: left;
+        width: 49px;
+        height: 45px;
+        background-color: #467cc8;
+        font-size: 20px;
+    }
+
+.arama .btnarama:hover {
+    color: #999;
+}
+
+.banner {
+    float: left;
+    width: 960px;
+    height: 300px;
+    margin-top: 15px;
+    background-color: #59bf67;
+    background-image: url('/images/banner.jpg');
+    background-size: cover;
+    text-align: center;
+    font-size: 19px;
+    border-radius:10px;
+}
+
+.sol {
+    float: left;
+    margin-top: 15px;
+    width: 245px;
+    height: 500px;
+    background-color: none;
+    border-radius:10px;
+    border:1px solid #59bf67;
+}
+
+.kayıt {
+    float: left;
+    width: 100%;
+    height: 266px;
+    
+}
+
+    .kayıt .ust {
+        float: left;
+        width: 100%;
+        height: 44px;
+        border-bottom: 1px solid red;
+        text-align: center;
+        line-height: 44px;
+        font-size: 19px;
+    }
+
+    .kayıt .alt {
+        float: left;
+        width: 100%;
+        height: 220px;
+        border-bottom: 1px solid red;
+    }
+
+.kullanıcıadı {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.sifre {
+    margin-left: 10px;
+}
+
+
+.txtbox {
+    width: 248px;
+    height: 38px;
+    border: 1px solid red;
+}
+
+    .txtbox:hover {
+        border:solid #467cc8 2px;          
+    }
+
+.btnkayit {
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid red;
+    font-size: 15px;
+}
+
+    .btnkayit:hover {
+        background-color: #24745e;
+    }
+
+.duyurularüst {
+    float: left;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 1px solid red;
+}
+
+.duyurularalt {
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+.duyuru-wrap {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+    .duyuru-wrap:hover {
+        background-color: #d5d5d5;
+    }
+.solmenü {
+    height:35px;
+    width:80%;
+    margin:3px auto;
+    text-align:center;
+    line-height:35px;   
+    background-image:url(../admin/icon/arkaplan.jpg);
+    background-repeat:repeat-x;   
+    border-radius:7px;
+}
+    .solmenü:hover {
+        font-size:17px;
+    }
+
+
+.sağ {
+    border: 1px solid #59bf67;
+    float: right;
+    width: 940px;
+    height: auto;
+    background-color: none;
+    margin-top: 15px;
+    border-radius:10px;
+    
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin-top: 45px;
+    background-color: #ecede0;
+    text-align: center;
+    line-height: 60px;
+}
+
+.eklearaç {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.ekletxt {
+   border:1px solid red;
+    
+}
+
+    .ekletxt:hover {
+        border:2px solid #467cc8;
+
+    }
+.txtduyuru {
+    border:1px solid red;
+    text-align: left;
+}
+.txtduyuru:hover {
+    border: 2px solid #467cc8;
+}
+
+.kayitbtn:hover {
+    background-color: red;
+}
+
+.txtkayıt {
+    margin-top: 10px;
+    border-radius:5px;
+
+}
+
+.btnkaydet {
+    margin-top: 10px;
+}
+
+.duyuru {
+    color: red;
+}
+
+.LBL {
+    float: left;
+    margin-left: 10px;
+    width: 20px;
+    font-size: 15px;
+}
+
+.logo1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+    .logo1:hover {
+        height: 55px;
+        width: 55px;
+    }
+.DuyuruSayfası {
+    margin-top:10px;
+}
+.DuyuruBtn {
+    height:30px;
+    width:105px;
+    background-color:#caa02e;
+}
+.DuyuruBtn:hover {
+    font-size:13.5px;
+    
+}
+.button5 {
+    -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+     border:2px solid #59bf67;
+     cursor:pointer;
+     background-color:white;
+     border-radius:10px;
+     
+}
+    .button5:hover {
+        background-color:#59bf67;
+        color: black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+.eklebutton{
+    -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+     border:2px solid #59bf67;
+     cursor:pointer;
+     border-radius:10px;
+}
+    .eklebutton:hover {
+         background-color:#59bf67;
+         color:black;
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    .dropbtn {
+    background-color:black;
+    color: black;
+    font-size: 15.5px;
+    border: none;
+    cursor: pointer;
+    margin-left:10px;
+    height:43px;
+    color:white;
+    
+}
+        .dropbtn:hover {
+            background-color:gray;
+        }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:1px solid red;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+     text-shadow:1px 1px 4px red;
+    
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius:5px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+      text-shadow:1px 1px 4px red;
+}
+.dropdown1:hover {
+    box-shadow:1px 1px 4px red;
+}
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.img {
+    width:50px;
+    height:38px;
+}
+.img:hover {
+    height:35px;
+        
+}
+.icon:hover {
+    background-color:gray;
+}
+
+
+

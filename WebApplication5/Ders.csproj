@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{810BADF9-0FC5-4D44-9D61-67FA8B733E4A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication5</RootNamespace>
+    <AssemblyName>WebApplication5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\ArabaResim.aspx" />
+    <Content Include="admin\AraçGüncelle.aspx" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\DuyuruEkle.aspx" />
+    <Content Include="admin\DuyuruGöster.aspx" />
+    <Content Include="admin\DuyuruGüncelle.aspx" />
+    <Content Include="admin\Giris.aspx" />
+    <Content Include="admin\icon\arkaplan.jpg" />
+    <Content Include="admin\icon\cevap.png" />
+    <Content Include="admin\icon\Delete.png" />
+    <Content Include="admin\icon\eyes.jpg" />
+    <Content Include="admin\icon\gerial.jpg" />
+    <Content Include="admin\icon\gerial1.png" />
+    <Content Include="admin\icon\oku.png" />
+    <Content Include="admin\icon\save.png" />
+    <Content Include="admin\icon\update.jpg" />
+    <Content Include="admin\icon\update.png" />
+    <Content Include="admin\icon\yenile1.png" />
+    <Content Include="admin\icon\yenile.png" />
+    <Content Include="admin\images\Banner.jpg" />
+    <Content Include="admin\AraçGöster.aspx" />
+    <Content Include="admin\images\logo.png" />
+    <Content Include="admin\images\logo1.png" />
+    <Content Include="admin\MaliTablo.aspx" />
+    <Content Include="admin\Mesajlar.aspx" />
+    <Content Include="admin\Style.css" />
+    <Content Include="admin\w3.css" />
+    <Content Include="admin\Web.config" />
+    <Content Include="admin\WebForm2.aspx" />
+    <Content Include="admin\YorumDüzenle.aspx" />
+    <Content Include="admin\Yorumlar.aspx" />
+    <Content Include="admin\ÜyeOnay.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\ArabaResim.aspx.cs">
+      <DependentUpon>ArabaResim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ArabaResim.aspx.designer.cs">
+      <DependentUpon>ArabaResim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AraçGüncelle.aspx.cs">
+      <DependentUpon>AraçGüncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AraçGüncelle.aspx.designer.cs">
+      <DependentUpon>AraçGüncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionQuerry.cs" />
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DuyuruEkle.aspx.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DuyuruEkle.aspx.designer.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DuyuruGöster.aspx.cs">
+      <DependentUpon>DuyuruGöster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DuyuruGöster.aspx.designer.cs">
+      <DependentUpon>DuyuruGöster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DuyuruGüncelle.aspx.cs">
+      <DependentUpon>DuyuruGüncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DuyuruGüncelle.aspx.designer.cs">
+      <DependentUpon>DuyuruGüncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Giris.aspx.cs">
+      <DependentUpon>Giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Giris.aspx.designer.cs">
+      <DependentUpon>Giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AraçGöster.aspx.cs">
+      <DependentUpon>AraçGöster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AraçGöster.aspx.designer.cs">
+      <DependentUpon>AraçGöster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaliTablo.aspx.cs">
+      <DependentUpon>MaliTablo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaliTablo.aspx.designer.cs">
+      <DependentUpon>MaliTablo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\YorumDüzenle.aspx.cs">
+      <DependentUpon>YorumDüzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\YorumDüzenle.aspx.designer.cs">
+      <DependentUpon>YorumDüzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esqbaglantisi.cs" />
+    <Compile Include="kullanıcı\anasayfa.aspx.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\anasayfa.aspx.designer.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\aracsecimi.aspx.cs">
+      <DependentUpon>aracsecimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\aracsecimi.aspx.designer.cs">
+      <DependentUpon>aracsecimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\aracsiparis.aspx.cs">
+      <DependentUpon>aracsiparis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\aracsiparis.aspx.designer.cs">
+      <DependentUpon>aracsiparis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\duyurular.aspx.cs">
+      <DependentUpon>duyurular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\duyurular.aspx.designer.cs">
+      <DependentUpon>duyurular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\galeri.aspx.cs">
+      <DependentUpon>galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\galeri.aspx.designer.cs">
+      <DependentUpon>galeri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\hakkinda.aspx.cs">
+      <DependentUpon>hakkinda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\hakkinda.aspx.designer.cs">
+      <DependentUpon>hakkinda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\kampanyalar.aspx.cs">
+      <DependentUpon>kampanyalar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\kampanyalar.aspx.designer.cs">
+      <DependentUpon>kampanyalar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\kullanicisözlesmesi.aspx.cs">
+      <DependentUpon>kullanicisözlesmesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\kullanicisözlesmesi.aspx.designer.cs">
+      <DependentUpon>kullanicisözlesmesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\menu.Master.cs">
+      <DependentUpon>menu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\menu.Master.designer.cs">
+      <DependentUpon>menu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı\uyekayit.aspx.cs">
+      <DependentUpon>uyekayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı\uyekayit.aspx.designer.cs">
+      <DependentUpon>uyekayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="admin\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ÜyeOnay.aspx.cs">
+      <DependentUpon>ÜyeOnay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ÜyeOnay.aspx.designer.cs">
+      <DependentUpon>ÜyeOnay.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Main.Master" />
+    <None Include="admin\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="admin\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="kullanıcı\anasayfa.aspx" />
+    <Content Include="kullanıcı\aracsecimi.aspx" />
+    <Content Include="kullanıcı\aracsiparis.aspx" />
+    <Content Include="kullanıcı\css\all-icons.css" />
+    <Content Include="kullanıcı\css\animate.min.css" />
+    <Content Include="kullanıcı\css\bootstrap-grid.css" />
+    <Content Include="kullanıcı\css\bootstrap-responsive.css" />
+    <Content Include="kullanıcı\css\bootstrap-responsive.min.css" />
+    <Content Include="kullanıcı\css\bootstrap.css" />
+    <Content Include="kullanıcı\css\bootstrap.min.css" />
+    <Content Include="kullanıcı\css\contact.css" />
+    <Content Include="kullanıcı\css\flexslider.css" />
+    <Content Include="kullanıcı\css\font-awesome.css" />
+    <Content Include="kullanıcı\css\font-awesome.min.css" />
+    <Content Include="kullanıcı\css\jquery.DonutWidget.min.css" />
+    <Content Include="kullanıcı\css\jquerysctipttop.css" />
+    <Content Include="kullanıcı\css\lightbox.css" />
+    <Content Include="kullanıcı\css\linearicons.css" />
+    <Content Include="kullanıcı\css\magnific-popup.css" />
+    <Content Include="kullanıcı\css\main.css" />
+    <Content Include="kullanıcı\css\nice-select.css" />
+    <Content Include="kullanıcı\css\owl.carousel.css" />
+    <Content Include="kullanıcı\css\style.css" />
+    <Content Include="kullanıcı\css\urunrez.css" />
+    <Content Include="kullanıcı\duyurular.aspx" />
+    <Content Include="kullanıcı\galeri.aspx" />
+    <Content Include="kullanıcı\hakkinda.aspx" />
+    <Content Include="kullanıcı\iletisim.aspx" />
+    <Content Include="kullanıcı\images\araba.jpg" />
+    <Content Include="kullanıcı\images\bg-car.png" />
+    <Content Include="kullanıcı\images\carouselitem1.jpg" />
+    <Content Include="kullanıcı\images\carouselitem2.jpg" />
+    <Content Include="kullanıcı\images\carouselitem3.jpg" />
+    <Content Include="kullanıcı\images\close.png" />
+    <Content Include="kullanıcı\images\Copy of bg-car.png" />
+    <Content Include="kullanıcı\images\hakkinda.png" />
+    <Content Include="kullanıcı\images\kampanya1.jpg" />
+    <Content Include="kullanıcı\images\kampanya2.jpg" />
+    <Content Include="kullanıcı\images\kampanya3.jpg" />
+    <Content Include="kullanıcı\images\kampanya4.jpg" />
+    <Content Include="kullanıcı\images\kampanya5.png" />
+    <Content Include="kullanıcı\images\kampanya6.jpg" />
+    <Content Include="kullanıcı\images\kampanya7.jpg" />
+    <Content Include="kullanıcı\images\kampanya8.jpg" />
+    <Content Include="kullanıcı\images\kucuk-bg-car.png" />
+    <Content Include="kullanıcı\images\loading.gif" />
+    <Content Include="kullanıcı\images\memnun1.jpg" />
+    <Content Include="kullanıcı\images\memnun2.jpg" />
+    <Content Include="kullanıcı\images\memnun3.jpg" />
+    <Content Include="kullanıcı\images\memnun4.jpg" />
+    <Content Include="kullanıcı\images\neleryapiyoruzmodalbg.jpg" />
+    <Content Include="kullanıcı\images\next.png" />
+    <Content Include="kullanıcı\images\portfolio1.jpg" />
+    <Content Include="kullanıcı\images\portfolio2.jpg" />
+    <Content Include="kullanıcı\images\portfolio3.jpg" />
+    <Content Include="kullanıcı\images\portfolio4.jpg" />
+    <Content Include="kullanıcı\images\portfolio5.jpg" />
+    <Content Include="kullanıcı\images\portfolio6.jpg" />
+    <Content Include="kullanıcı\images\prev.png" />
+    <Content Include="kullanıcı\js\bootstrap.js" />
+    <Content Include="kullanıcı\js\jquery-3.3.1.js" />
+    <Content Include="kullanıcı\js\lightbox.js" />
+    <Content Include="kullanıcı\js\main.js" />
+    <Content Include="kullanıcı\js\popper.min.js" />
+    <Content Include="kullanıcı\js\scrollreveal.min.js" />
+    <Content Include="kullanıcı\kampanyalar.aspx" />
+    <Content Include="kullanıcı\kullanicisözlesmesi.aspx" />
+    <Content Include="kullanıcı\sliderJS\amazingslider-1.css" />
+    <Content Include="kullanıcı\sliderJS\amazingslider.js" />
+    <Content Include="kullanıcı\sliderJS\arrows-32-32-1.png" />
+    <Content Include="kullanıcı\sliderJS\bottomshadow-110-95-3.png" />
+    <Content Include="kullanıcı\sliderJS\bullet-24-24-1.png" />
+    <Content Include="kullanıcı\sliderJS\carouselarrows-32-32-0.png" />
+    <Content Include="kullanıcı\sliderJS\froogaloop2.min.js" />
+    <Content Include="kullanıcı\sliderJS\html5boxplayer.swf" />
+    <Content Include="kullanıcı\sliderJS\html5boxplayer_fullscreen.png" />
+    <Content Include="kullanıcı\sliderJS\html5boxplayer_hd.png" />
+    <Content Include="kullanıcı\sliderJS\html5boxplayer_playpause.png" />
+    <Content Include="kullanıcı\sliderJS\html5boxplayer_playvideo.png" />
+    <Content Include="kullanıcı\sliderJS\html5boxplayer_volume.png" />
+    <Content Include="kullanıcı\sliderJS\initslider-1.js" />
+    <Content Include="kullanıcı\sliderJS\jquery.js" />
+    <Content Include="kullanıcı\sliderJS\lightbox-close.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-loading.gif" />
+    <Content Include="kullanıcı\sliderJS\lightbox-navnext.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-navprev.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-next.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-pause.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-play.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-playvideo.png" />
+    <Content Include="kullanıcı\sliderJS\lightbox-prev.png" />
+    <Content Include="kullanıcı\sliderJS\navarrows-28-28-0.png" />
+    <Content Include="kullanıcı\sliderJS\navbuttonbgimage-28-28-0.png" />
+    <Content Include="kullanıcı\sliderJS\navplaypause-28-28-0.png" />
+    <Content Include="kullanıcı\sliderJS\playvideo-64-64-0.png" />
+    <Content Include="kullanıcı\sliderJS\previewarrow-16-8-0.png" />
+    <Content Include="kullanıcı\uyekayit.aspx" />
+    <Content Include="web.config" />
+    <Content Include="kullanıcı\css\bootstrap-grid.css.map" />
+    <Content Include="kullanıcı\css\bootstrap.min.css.map" />
+    <Content Include="kullanıcı\js\bootstrap.js.map" />
+    <Content Include="kullanıcı\Site1.Master" />
+    <Content Include="kullanıcı\menu.Master" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="arabaresim\" />
+    <Folder Include="duyururesim\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:13859/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
